@@ -1,0 +1,272 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main {
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* main-bg */
+.main-bg {
+    background-image: url(image/home/banner-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+
+.main-bg-black {
+    background: rgba(0, 0, 0, 0.7);
+    height: 700px;
+}
+
+/* nav */
+nav {
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.navbaar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-info {
+    display: flex;
+}
+
+@media screen and (max-width:700px) {
+    .nav-info {
+        display: none;
+    }
+
+    .nav-social-media {
+        justify-content: space-between;
+    }
+
+    .nav-social-media .search-icon {
+        margin-right: 100px;
+    }
+}
+
+.nav-info .icon {
+    display: flex;
+    align-items: center;
+}
+
+.nav-info .icon h2 {
+    font-size: 14px;
+    margin: 0px 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+}
+
+.nav-social-media {
+    display: inline-flex;
+    gap: 10px;
+}
+
+/* header */
+.header-detail {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 100px;
+    padding: 15px 50px;
+    align-items: center;
+}
+
+.logo {}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu ul li {
+    margin: 0px 10px;
+}
+
+.menu ul li a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu ul li a:hover {
+    color: #ffda0f;
+}
+
+#active a {
+    color: #ffda0f;
+}
+
+#donate-btn {
+    background-color: #ffda0f;
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+
+#donate-btn:hover {
+    background-color: chocolate;
+}
+
+.toggle-menu ul {
+    list-style: none;
+    display: block;
+}
+
+.toggle-menu ul li {
+    background-color: black;
+    width: 40px;
+    height: 4px;
+    margin: 8px 0px;
+}
+
+/* medai-wuery for menu */
+@media screen and (max-width:900px) {
+    .menu ul {
+        display: none;
+    }
+    .back-title h2{
+        font-size: 40px;
+    }
+}
+
+@media  screen and (max-width:800px){
+    .back-title h2{
+        font-size: 10px;
+    }
+}
+@media screen and (min-width:900px) {
+    .toggle-menu {
+        display: none;
+    }
+}
+
+/* banner-title */
+.banner-title {
+    margin: 100px auto;
+    text-align: center;
+    position: relative;
+}
+
+.back-title {
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.back-title h2 {
+    font-size: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    color: white;
+    opacity: 0.6;
+}
+
+.banner-title h3 {
+    font-size: 60px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 700px;
+    margin: 0 auto;
+    color: white;
+    align-items: center;
+    padding: 65px 0px 30px 0px;
+}
+
+.banner-title h3 span {
+    color: #ffda0f;
+}
+
+.banner-title p {
+    color: white;
+    font-size: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.buttons{
+    display: flex;
+    gap: 20px;
+    max-width: 700px;
+    width: 100%;
+    margin: 30px auto;
+}
+.buttons button{
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 17px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+}
+.on{
+    background-color: #ffda0f;
+    color: black;
+}
+.on:hover{
+    background-color: white;
+}
+.off{
+    background-color: white;
+}  
+.off:hover{
+    background-color: #ffda0f;
+} 
+#services{
+    padding: 100px 0px;
+    background-color: #0E3500;
+}
+.services-title{
+    padding: 0px 100px;
+    display: flex;
+    align-items: center;
+}
+.services-title .image-title{
+    position: relative;
+    width: 50%;
+}
+.back-title1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 54px;
+    opacity: 0.6;
+    position: absolute;
+    top: -30px;
+}
+
+.image-title p{
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
+    padding: 20px 0px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.image-title h2{
+    font-size: 40px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.image-title h2 span{
+    color: #ffda0f;
+}
+.services-title .image{
+    border: 5px solid white;
+    width: 50%;
+}
+.services-title .image img{
+    width: 100%;
+    height: 100%;
+}
